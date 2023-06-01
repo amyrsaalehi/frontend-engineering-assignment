@@ -1,0 +1,35 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  padding: 1rem;
+}
+.header-completes {
+  white-space: nowrap;
+}
+
+.header-sort_label {
+  margin-right: 0.5rem;
+}
+
+.header-sort_select {
+  margin-right: 2rem;
+}
+
+.header-filter_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-toggle_label {
+  display: inline-block;
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,39 @@
+:root {
+  --black: rgb(33, 37, 41);
+  --primary: #07f;
+  --text-secondary: #4d658a;
+}
+
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.show-more-btn {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
